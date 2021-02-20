@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from "react";
 import axios from 'axios'
 import "./App.css";
+import Content from './components/Content'
 
 function App() {
   const [nasaData, setnasaData] = useState({})
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <h1>NASA PHOTO OF THE DAY</h1>
+      <Content nasaData={nasaData} />
     </div>
   );
 }
