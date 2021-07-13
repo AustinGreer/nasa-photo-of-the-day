@@ -1,13 +1,16 @@
 import React from "react";
-import "./App.css";
+
+
+import Header from "./components/Header";
+import PhotoOfTheDay from "./components/PhotoOfTheDay";
+import PhotoInfo from "./components/PhotoInfo";
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+    <div>
+      <Header />
+      <PhotoOfTheDay />
+      <PhotoInfo />
     </div>
   );
 }
